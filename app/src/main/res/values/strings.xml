@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ECommerce</string>
     <array name="Location">
-    <item>Ring road 5/18</item>
+        <item>Ring road 5/18</item>
 
     </array>
 </resources>
