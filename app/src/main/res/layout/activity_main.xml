@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    >
+    <!--region Toolbar Start-->
+    <!--<com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="top"
+            android:background="#FFF">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>-->
+    <!--endregion-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/btn_openDrawer"
+            android:layout_width="78dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menuicon"
+            android:src="@drawable/ic_sort_button_with_three_lines"
+            />
+        <TextView
+            android:id="@+id/deliverto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/btn_openDrawer"
+            android:text="Delivery to"
+            android:fontFamily="@font/capriola"
+            android:textSize="10sp"
+             />
+        <Spinner
+            android:layout_marginLeft="15dp"
+            android:id="@+id/pioedittxt5"
+            android:layout_width="220dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/deliverto"
+            android:layout_toRightOf="@id/btn_openDrawer"
+            style="@style/spinner_style"
+            android:dropDownVerticalOffset="-53dp"
+            android:spinnerMode="dialog"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/Location"
+            android:scrollbarStyle="insideInset" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_search"
+        android:hint="   e.x. Chicken, Pasta..."
+        android:paddingBottom="15dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/capriola"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special offers"
+        android:textSize="18sp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="#4B4B4B"
+        android:fontFamily="@font/capriola"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        >
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="55dp"
+            android:elevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/food" />
+    <LinearLayout
+        android:layout_marginTop="-10dp"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="#9AB448"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/capriola"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New American"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_star"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8 (127)"
+                android:textColor="#FFF"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="55dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/food2" />
+                <LinearLayout
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:background="#A5683D"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunger"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/capriola"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fast food"
+                        android:textSize="10sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_star"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:tint="#000000"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.8 (127)"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="55dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="2dp">
+
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/food33" />
+                <LinearLayout
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:background="#396E8E"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fish cury"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/capriola"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Indian masala"
+                        android:textSize="10sp"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_star"
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.9 (127)"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Restaurants"
+        android:textSize="18sp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="#4B4B4B"
+        android:fontFamily="@font/capriola"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="2dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/popular2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="-10dp"
+                android:background="#B36747"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/capriola"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Fish cury"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Indian masala"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="4.9 (127)"
+                        android:textColor="#FFF"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</ScrollView>
